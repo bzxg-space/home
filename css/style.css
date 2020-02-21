@@ -1,0 +1,123 @@
+/* 清除内外边距 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 整体 */
+article {
+	min-width: 320px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+/* 头 */
+header {
+	width: 100%;
+	height: 40px;
+	margin: 15px 0px;
+}
+
+header h3 {
+	line-height: 40px;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 0.2em;
+	color: #4cb4e7;
+}
+
+/* 主体 */
+section {
+	margin: 0px 5px 25px;
+}
+
+section h4 {
+	color: #0080ff;
+	text-align: center;
+	margin: 10px 0px 5px 0px;
+	letter-spacing: 0.16em;
+}
+
+section hr {
+	margin: 1px auto 10px;
+	width: 85%;
+	height: 0.8px;
+	background: #6495ED; 
+	border-color: #6495ED;
+}
+
+section nav {
+	border: 0.8px solid #6495ED;
+	border-radius:10px;
+	margin: 10px 5px;
+	padding-top: 8px;
+}
+
+section nav a {
+	display: block;
+	float: left;
+	font-size: 13.5px;
+	width: 45%;
+	height: 50px;
+	line-height: 50px;
+	background: rgba(0, 164, 255, 1);
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 20px 10px;
+	text-decoration: none;
+	margin: 0px 2.5% 6px;
+	/*鼠标经过，变小手*/
+	cursor: pointer;
+	letter-spacing: 0.11em;
+}
+
+section nav a:hover {
+	color: rgba(0, 164, 255, 1);
+	font-weight: bolder;
+	background: rgba(0, 164, 255, 0.3);
+}
+
+/* 清除子元素浮动对父元素的影响 */
+section nav:after {
+	display: block;
+	height: 0;
+	content: "";
+	clear: both;
+}
+
+/* 尾 */
+footer {
+	margin: 20px auto;
+	font-size: 12px;
+	color: gray;
+	line-height: 1.8em;
+	letter-spacing: 0.09em;
+}
+
+footer a {
+	text-decoration: none;
+	color: grey;
+	font-weight: lighter;
+}
+
+footer a:hover {
+	color: royalblue;
+	font-weight: bold;
+}
+
+/* 自适应pc/移动 */
+@media screen and (min-width:768px) {
+	article {
+		width: 75%;
+		max-width: 800px;
+	}
+
+	section nav a {
+		width: 31%;
+		margin: 0px 1% 8px;
+		font-size: 14.5px;
+		height: 60px;
+		line-height: 60px;
+	}
+}
