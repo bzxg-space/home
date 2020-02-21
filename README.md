@@ -1,3 +1,4 @@
-# 搬砖小哥的个人主页
-## 口号：回归现实，分享有趣
-## 网址：[bzxg-space.github.io/home](https://bzxg-space.github.io/home "bzxg-space") 
+# bzxg - home
+## 关于
+- 口号：回归现实，分享有趣
+- 网址：[bzxg-space.github.io/home](https://bzxg-space.github.io/home "bzxg-space") 
